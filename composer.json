@@ -1,0 +1,19 @@
+{
+    "name": "appkit/rest",
+    "type": "library",
+    "description": "REST client/api essentials for the AppKit framework",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "require": {
+        "appkit/http": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AppKit\\Rest\\": "src/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    }
+}
