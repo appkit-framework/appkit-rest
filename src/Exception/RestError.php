@@ -11,9 +11,10 @@ class RestError extends HttpError {
         $status = 500,
         $errorCode = 'UNKNOWN_ERROR',
         $message = null,
-        $previous = null
+        $previous = null,
+        $headers = []
     ) {
-        parent::__construct($status, $message, $previous);
+        parent::__construct($status, $message, $previous, $headers);
         $this -> errorCode = $errorCode;
     }
 
