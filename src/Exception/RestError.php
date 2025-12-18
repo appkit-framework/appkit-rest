@@ -20,13 +20,4 @@ class RestError extends HttpError {
     public function getErrorCode() {
         return $this -> errorCode;
     }
-
-    public function toArray() {
-        return [
-            'error' => [
-                'code' => $this -> getErrorCode(),
-                'msg' => $this -> getMessage()
-            ]
-        ];
-    }
 }
